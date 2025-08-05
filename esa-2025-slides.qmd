@@ -1,0 +1,98 @@
+## People
+
+- Jack Williams
+- Tony Ives
+- Jonathan Johnson
+- David Nelson
+- Bryan Schuman
+- Anjelina Perotti
+- Nora Schlenker
+
+
+## multinomialTS
+
+Description of model
+
+link/QR code to model website
+
+link/QR code to github
+
+
+## Case studies
+<br>
+
+:::::: {.columns}
+::: {.column}
+### Tulane
+
+- location
+- 60,000 yrs
+- Ecological dynamics
+:::
+::: {.column}
+### Sunfish
+
+- location
+- xxx years
+- ecological dynamics
+:::
+::::::
+
+
+## Tulane description
+
+Pollen diagram
+
+multiple hypotheses
+
+## Fitting Tulane
+
+Parameter selection
+
+- window span
+- species/taxonomic group selection
+- interactions
+
+What can we detect, what do we lose?
+
+- lose: fine-scale processes (e.g., post-fire recovery)
+
+## Tulane results
+
+Figures
+
+Supported hypotheses
+
+## Sunfish description
+
+Pollen/lakelevel diagram
+
+multiple hypotheses
+
+## Fitting Sunfish
+
+Parameter selection
+
+- window span
+- species/taxonomic group selection
+- interactions
+
+What can we detect, what do we lose?
+
+- lose: multiple drivers
+
+## Sunfish results
+
+Figures
+
+Supported Hypotheses
+
+## Comparison of results
+
+Results are not causal but test multiple hypotheses
+
+## Thank you for listening
+
+link/QR code to model website
+
+link/QR code to github
