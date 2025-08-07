@@ -1,33 +1,101 @@
 ## People
 
+<br>
+
+:::: {.columns}
+::: {.column}
 - Jack Williams
 - Tony Ives
-- Jonathan Johnson
+- Angie Perotti
+- Nora Schlenker
+:::
+::: {.column}
 - David Nelson
 - Bryan Schuman
-- Anjelina Perotti
-- Nora Schlenker
+- Jonathan Johnson
+- Vania Stefanova
+:::
+::::
+
+<!-- ![](./figures/people.png){width=700 height=400} -->
+
+<div style="margin-left: 180pt;">
+  <img src="./figures/people.png" width="700" height="400">
+</div>
 
 
 ## multinomialTS
 
-Description of model
+<br>
 
-link/QR code to model website
+A state-space approach to modelling multinomially distributed community data.
 
-link/QR code to github
+:::: {.columns}
+::: {.column}
+- ESA 2023: presented early development.
+- ESA 2024: ran workshop on how to fit multinomialTS.
+- ESA 2025!: presenting developed use-cases.
+
+:::
+::: {.column}
+- Do you have multinomially distributed data?
+- I'll try to leave a couple of extra minutes for discussion.
+:::
+::::
+
+## Beyond pattern recognition
+
+<br>
+
+The cutting edge in palaeoecology is to establish potential relationships between observed patterns in species relative abundances and environmental covariates. For example, are observed patterns driven by:
+
+- species interactions?
+- climate variability?
+- fire regime?
+- ...
+
+This is what we want to know if we are to use palaeoecology to inform management of contemporary ecosystems or inform potential future ecosystem states. No easy task!
+
+## State-space modelling
+
+<br>
+
+State-space modelling goes beyond descriptive approaches and attempts to estimate:
+
+- autoregressive / density dependent processes 
+- interspecific interactions ($C$ matrix)
+- species-environment interactions ($B$ vector)
+- combinations of the above
+
+## multinomialTS
+
+:::: {.columns}
+::: {.column}
+- Models a multinomial distribution (i.e., count data) directly
+- abotic drivers
+- biotic interactions
+- Paper in review
+:::
+::: {.column}
+
+![](./figures/qr-code.png){fig-align="center" width=80%}
+:::
+::::
+
 
 
 ## Case studies
 <br>
 
-:::::: {.columns}
+:::: {.columns}
 ::: {.column}
 ### Tulane
 
-- location
-- 60,000 yrs
+- Florida
+- ~60,000 yrs
 - Ecological dynamics
+- covariates
+- Williams _et al.,_ in prep, Grimm _et al.,_ 1993, 2006 [@grimm1993; @grimm2006b]
 :::
 ::: {.column}
 ### Sunfish
@@ -35,8 +103,10 @@ link/QR code to github
 - location
 - xxx years
 - ecological dynamics
+- covariates
+- cite JJ paper
 :::
-::::::
+::::
 
 
 ## Tulane description
@@ -76,6 +146,7 @@ Parameter selection
 - window span
 - species/taxonomic group selection
 - interactions
+- try pine/hemloc interaction
 
 What can we detect, what do we lose?
 
@@ -91,8 +162,12 @@ Supported Hypotheses
 
 Results are not causal but test multiple hypotheses
 
-## Thank you for listening
+## Thank you for listening!
 
-link/QR code to model website
+![](./figures/qr-code.png){fig-align="center" width=70%}
 
-link/QR code to github
+
+## References
+
+::: {#refs}
+:::

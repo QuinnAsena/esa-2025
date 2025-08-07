@@ -9,11 +9,9 @@
 <link href="esa-2025-slides_files/libs/quarto-html/quarto-syntax-highlighting-dark-e2182856f2c32102dd26b05a5ef16cb5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.30">
 
-  <meta name="author" content="Quinn Asena">
-  <meta name="author" content="Jack Williams">
-  <meta name="author" content="Tony Ives">
-  <meta name="dcterms.date" content="2025-08-05">
-  <title>A state-space approach to testing hypotheses about environmental drivers and biotic interactions demonstrated on palaeoecological time series</title>
+  <meta name="author" content="Quinn Asena, Jack Williams, and Tony Ives">
+  <meta name="dcterms.date" content="2025-08-07">
+  <title>Demonstrating a stats-space approach to modelling palaeoecological data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,7 +29,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="esa-2025-slides_files/libs/revealjs/dist/theme/quarto-091ebfb71d12db7fc524ec91495e1509.css">
   <link rel="stylesheet" href="logo.css">
   <link href="esa-2025-slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -131,54 +149,100 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#054746ff" class="quarto-title-block center">
-  <h1 class="title">A state-space approach to testing hypotheses about environmental drivers and biotic interactions demonstrated on palaeoecological time series</h1>
+  <h1 class="title">Demonstrating a stats-space approach to modelling palaeoecological data</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Quinn Asena 
+Quinn Asena, Jack Williams, and Tony Ives 
 </div>
-        <p class="quarto-title-affiliation">
-            UW Madison, Cary Institute for Ecosystem Sciences
-          </p>
-    </div>
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Jack Williams 
 </div>
-        <p class="quarto-title-affiliation">
-            UW Madison
-          </p>
-    </div>
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Tony Ives 
-</div>
-        <p class="quarto-title-affiliation">
-            UW Madison
-          </p>
-    </div>
 </div>
 
-  <p class="date">2025-08-05</p>
+  <p class="date">2025-08-07</p>
 </section>
 <section id="people" class="slide level2">
 <h2>People</h2>
+<p><br></p>
+<div class="columns">
+<div class="column">
 <ul>
 <li>Jack Williams</li>
 <li>Tony Ives</li>
-<li>Jonathan Johnson</li>
-<li>David Nelson</li>
-<li>Bryan Schuman</li>
-<li>Anjelina Perotti</li>
+<li>Angie Perotti</li>
 <li>Nora Schlenker</li>
 </ul>
+</div><div class="column">
+<ul>
+<li>David Nelson</li>
+<li>Bryan Schuman</li>
+<li>Jonathan Johnson</li>
+<li>Vania Stefanova</li>
+</ul>
+</div></div>
+<!-- ![](./figures/people.png){width=700 height=400} -->
+<div style="margin-left: 180pt;">
+<p><img src="./figures/people.png" width="700" height="400"></p>
+</div>
 </section>
 <section id="multinomialts" class="slide level2">
 <h2>multinomialTS</h2>
-<p>Description of model</p>
-<p>link/QR code to model website</p>
-<p>link/QR code to github</p>
+<p><br></p>
+<p>A state-space approach to modelling multinomially distributed community data.</p>
+<div class="columns">
+<div class="column">
+<ul>
+<li>ESA 2023: presented early development.</li>
+<li>ESA 2024: ran workshop on how to fit multinomialTS.</li>
+<li>ESA 2025!: presenting developed use-cases.</li>
+</ul>
+</div><div class="column">
+<ul>
+<li>Do you have multinomially distributed data?</li>
+<li>I’ll try to leave a couple of extra minutes for discussion.</li>
+</ul>
+</div></div>
+</section>
+<section id="beyond-pattern-recognition" class="slide level2">
+<h2>Beyond pattern recognition</h2>
+<p><br></p>
+<p>The cutting edge in palaeoecology is to establish potential relationships between observed patterns in species relative abundances. For example, are observed patterns driven by:</p>
+<ul>
+<li>species interactions?</li>
+<li>climate variability?</li>
+<li>fire regime?</li>
+<li>…</li>
+</ul>
+<p>This is what we want to know if we are to use palaeoecology to inform management of contemporary ecosystems or inform potential future ecosystem states. No easy task!</p>
+</section>
+<section id="state-space-modelling" class="slide level2">
+<h2>State-space modelling</h2>
+<p><br></p>
+<p>State-space modelling goes beyond descriptive approaches and attempts to estimate:</p>
+<ul>
+<li>autoregressive / density dependent processes</li>
+<li>interspecific interactions (<span class="math inline">\(C\)</span> matrix)</li>
+<li>species-environment interactions (<span class="math inline">\(B\)</span> vector)</li>
+<li>combinations of the above</li>
+</ul>
+</section>
+<section id="multinomialts-1" class="slide level2">
+<h2>multinomialTS</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Models a multinomial distribution (i.e., count data) directly</li>
+<li>abotic drivers</li>
+<li>biotic interactions</li>
+<li>Paper in review</li>
+</ul>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./figures/qr-code.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="case-studies" class="slide level2">
 <h2>Case studies</h2>
@@ -187,9 +251,11 @@ Tony Ives
 <div class="column">
 <h3 id="tulane">Tulane</h3>
 <ul>
-<li>location</li>
-<li>60,000 yrs</li>
+<li>Florida</li>
+<li>~60,000 yrs</li>
 <li>Ecological dynamics</li>
+<li>covariates</li>
+<li>Williams <em>et al.,</em> in prep, Grimm <em>et al.,</em> 1993, 2006 <span class="citation" data-cites="grimm1993 grimm2006b">(<a href="#/references" role="doc-biblioref" onclick="">Grimm et al. 1993</a>, <a href="#/references" role="doc-biblioref" onclick="">2006</a>)</span></li>
 </ul>
 </div><div class="column">
 <h3 id="sunfish">Sunfish</h3>
@@ -197,6 +263,8 @@ Tony Ives
 <li>location</li>
 <li>xxx years</li>
 <li>ecological dynamics</li>
+<li>covariates</li>
+<li>cite JJ paper</li>
 </ul>
 </div></div>
 </section>
@@ -235,6 +303,7 @@ Tony Ives
 <li>window span</li>
 <li>species/taxonomic group selection</li>
 <li>interactions</li>
+<li>try pine/hemloc interaction</li>
 </ul>
 <p>What can we detect, what do we lose?</p>
 <ul>
@@ -251,9 +320,19 @@ Tony Ives
 <p>Results are not causal but test multiple hypotheses</p>
 </section>
 <section id="thank-you-for-listening" class="slide level2">
-<h2>Thank you for listening</h2>
-<p>link/QR code to model website</p>
-<p>link/QR code to github</p>
+<h2>Thank you for listening!</h2>
+
+<img data-src="./figures/qr-code.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-grimm1993" class="csl-entry" role="listitem">
+Grimm, Eric C., George L. Jacobson, William A. Watts, Barbara C. S. Hansen, and Kirk A. Maasch. 1993. <span>“A 50,000-<span>Year Record</span> of <span>Climate Oscillations</span> from <span>Florida</span> and <span>Its Temporal Correlation</span> with the <span>Heinrich Events</span>.”</span> <em>Science</em> 261 (5118): 198–200. <a href="https://doi.org/10.1126/science.261.5118.198">https://doi.org/10.1126/science.261.5118.198</a>.
+</div>
+<div id="ref-grimm2006b" class="csl-entry" role="listitem">
+Grimm, Eric C., William A. Watts, George L. Jacobson, Barbara C. S. Hansen, Heather R. Almquist, and Ann C. Dieffenbacher-Krall. 2006. <span>“Evidence for Warm Wet <span>Heinrich</span> Events in <span>Florida</span>.”</span> <em>Quaternary Science Reviews</em> 25 (17): 2197–2211. <a href="https://doi.org/10.1016/j.quascirev.2006.04.008">https://doi.org/10.1016/j.quascirev.2006.04.008</a>.
+</div>
+</div>
 
 </section>
     </div>

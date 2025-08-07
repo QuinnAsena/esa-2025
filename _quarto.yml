@@ -1,13 +1,8 @@
-title: "A state-space approach to testing hypotheses about environmental drivers and biotic interactions demonstrated on palaeoecological time series"
+title: "Modelling palaeoecological datasets using a state-space approach: two case-studies"
 author:
-  - name: Quinn Asena
-    affiliation: UW Madison, Cary Institute for Ecosystem Sciences
-  - name: Jack Williams
-    affiliation:  UW Madison
-  - name: Tony Ives
-    affiliation:  UW Madison
+  - name: Quinn Asena, Jack Williams, and Tony Ives
 date: today
-# bibliography: refs.bib
+bibliography: refs.bib
 from: markdown+emoji
 format:
   revealjs:
