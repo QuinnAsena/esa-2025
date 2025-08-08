@@ -24,17 +24,19 @@
 </div>
 
 
-## multinomialTS
+## multinomialTS background
 
 <br>
 
-A state-space approach to modelling multinomially distributed community data.
+_A state-space approach to modelling multinomially distributed community data._
+
+<br>
 
 :::: {.columns}
 ::: {.column}
-- ESA 2023: presented early development.
-- ESA 2024: ran workshop on how to fit multinomialTS.
-- ESA 2025!: presenting developed use-cases.
+- ESA 2023: presented early development
+- ESA 2024: ran workshop on how to fit multinomialTS
+- ESA 2025!: presenting developed use-cases
 
 :::
 ::: {.column}
@@ -47,11 +49,11 @@ A state-space approach to modelling multinomially distributed community data.
 
 <br>
 
-The cutting edge in palaeoecology is to establish potential relationships between observed patterns in species relative abundances and environmental covariates. For example, are observed patterns driven by:
+The cutting edge in palaeoecology is to establish potential relationships between patterns observed in species relative abundances and environmental covariates. For example, are observed patterns driven by:
 
-- species interactions?
-- climate variability?
-- fire regime?
+- Species interactions?
+- Climate variability?
+- Fire regime?
 - ...
 
 This is what we want to know if we are to use palaeoecology to inform management of contemporary ecosystems or inform potential future ecosystem states. No easy task!
@@ -60,20 +62,22 @@ This is what we want to know if we are to use palaeoecology to inform management
 
 <br>
 
-State-space modelling goes beyond descriptive approaches and attempts to estimate:
+_State-space modelling goes beyond descriptive approaches and attempts to estimate:_
 
-- autoregressive / density dependent processes 
-- interspecific interactions
-- species-environment interactions
-- combinations of the above
+<br>
+
+- Autoregressive / density dependent processes 
+- Interspecific interactions
+- Species-environment interactions
+- Combinations of the above
 
 ## multinomialTS
 
 :::: {.columns}
 ::: {.column}
-- models a multinomial distribution (i.e., count data) directly
-- abotic drivers
-- biotic interactions
+- Models a multinomial distribution (i.e., count data) directly
+- Accepts multiple covariates of different type
+- Incorporates  process error _and_ observation error
 - Asena _et al.,_ in review
 :::
 ::: {.column}
@@ -93,8 +97,8 @@ State-space modelling goes beyond descriptive approaches and attempts to estimat
 
 - Florida
 - ~60,000 year-long record
-- centennial to millennial dynamics
-- covariates
+- Centennial to millennial dynamics
+- Covariates (regional/global)
   - fungal spores (proxy for megaherbivory)
   - $CO_2$ $\delta18O$ (climate)
   - Heinrich events (climate-related)
@@ -106,18 +110,27 @@ State-space modelling goes beyond descriptive approaches and attempts to estimat
 
 - Pennsylvania
 - ~13,000 years
-- decadal to centennial dynamics
-- covariates
+- Decadal to centennial dynamics
+- Covariates (local)
   - lake level (proxy for humidity)
 - Johnson et al., in review
 :::
 ::::
+
+## Fitting process
+<br>
+
+- Set up multiple working hypotheses
+- Choose focal taxa
+- Choose window-span/prediction resolution
+- fit model to hypotheses or components of each hypothesis
 
 ## Tulane variables
 
 ![](figures/tulane_esa.svg)
 
 ## Fitting Tulane
+<br>
 
 :::: {.columns}
 ::: {.column}
@@ -135,46 +148,50 @@ State-space modelling goes beyond descriptive approaches and attempts to estimat
   - two key dominant species
 - interactions estimated:
   - no interactions
-  - pine vs oak
+  - pine - oak
 :::
 ::::
 
-What can we detect, what do we lose?
-
-- lose: fine-scale processes (e.g., post-fire recovery)
 
 ## Tulane results
 
 ![](figures/tulane_B_C_ESA.svg)
 
-Supported hypotheses: climatic variability over biotic interactions had stronger statistical support (given the data!)
+Supported hypotheses: _given the data_, species interactions are important but climate covariates have a stronger influence.
 
 ## Sunfish description
 
 ![](figures/sunfish_esa.svg)
 
 ## Fitting Sunfish
+<br>
 
-Parameter selection
+:::: {.columns}
+::: {.column}
+### Questions/hypotheses:
+
+- Are local conditions (humidity) a stronger driver of change than species interactions?
+:::
+::: {.column}
+### Parameter selection
 
 - window span / prediction resolution 100 years
 - species/taxonomic group selection
   - five most dominant species
   - Eastern white pine, hemlock, beech, oak, and birch
 - interactions:
-  - no interactions
   - estimated between pine and hemlock (for this example)
+:::
+::::
 
-What can we detect, what do we lose?
-
-- lose: multiple drivers
 
 ## Sunfish results
 
 ![](figures/sunfish_B_C_ESA.svg)
 
 
-Supported Hypotheses
+Supported Hypotheses: local conditions most important to Hemlock but interactions are important among other species.
+Pairwise interactions not shown here.
 
 ## Comparison of results
 
@@ -182,8 +199,11 @@ Results are not causal but test multiple hypotheses
 
 ## Thank you for listening!
 
-![](./figures/qr-code.png){fig-align="center" width=70%}
+![](./figures/qr-code.png){fig-align="center" width=50%}
 
+::: footer
+![](figures/color-UWcrest-print.png){width=60} ![](figures/NSF_Official_logo_High_Res_1200ppi.png){width=100}
+:::
 
 ## References
 
