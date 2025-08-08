@@ -8,7 +8,7 @@ embed-resources: true
 format:
   revealjs:
     theme: dark
-    logo: figures/dark-mode.png
+    logo: ./figures/dark-mode.png
     css: logo.css
 #    backgroundcolor: "#44444c"
 #    fontcolor: "white"
