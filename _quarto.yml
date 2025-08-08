@@ -4,6 +4,7 @@ author:
 date: today
 bibliography: refs.bib
 from: markdown+emoji
+embed-resources: true
 format:
   revealjs:
     theme: dark
