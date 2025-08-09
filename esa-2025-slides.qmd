@@ -97,10 +97,9 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 - Florida
 - ~60,000 year-long record
-- Centennial to millennial dynamics
 - Covariates (regional/global)
   - fungal spores (proxy for megaherbivory)
-  - $CO_2$ $\delta18O$ (climate)
+  - $CO_2$ and $\delta18O$ (climate)
   - Heinrich events (climate-related)
   - charcoal (fire)
 - Williams _et al.,_ in prep, @grimm1993; @grimm2006b
@@ -110,7 +109,6 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 - Pennsylvania
 - ~13,000 years
-- Decadal to centennial dynamics
 - Covariates (local)
   - lake level (proxy for humidity)
 - Johnson et al., in review
@@ -121,13 +119,15 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 <br>
 
 - Set up multiple working hypotheses
-- Choose focal taxa
+- Choose focal taxa and reference group
 - Choose window-span/prediction resolution
-- fit model to hypotheses or components of each hypothesis
+- Fit model to hypotheses or components of each hypothesis
+
+_Showing results for best model!_
 
 ## Tulane variables
 
-![](figures/tulane_esa.svg)
+![](./figures/tulane_esa.svg){fig-align="center"}
 
 ## Fitting Tulane
 <br>
@@ -136,32 +136,32 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 ::: {.column}
 ### Questions/hypotheses:
 
-- are biotic interactions or climatic variability the primary drivers of change?
-- is the holocene period significantly different to the full 60,000 years?
+- Are biotic interactions or climatic variability the primary drivers of change?
+- Is mega-herbivory a driver of vegetation change?
+- is fire a driver of vegetation change?
 :::
 ::: {.column}
 ### Parameter selection
 
-- window span / prediction resolution 200 years
-- species/taxonomic group selection
+- Window span / prediction resolution 200 years
+- Species/taxonomic group selection
   - two functional groups
-  - two key dominant species
-- interactions estimated:
-  - no interactions
-  - pine - oak
+  - two key dominant taxa
+- Interactions estimated:
+  - pine - oak (in this example)
 :::
 ::::
 
 
 ## Tulane results
 
-![](figures/tulane_B_C_ESA.svg)
+![](./figures/tulane_B_C_ESA.svg){fig-align="center"}
 
 Supported hypotheses: _given the data_, species interactions are important but climate covariates have a stronger influence.
 
 ## Sunfish description
 
-![](figures/sunfish_esa.svg)
+![](./figures/sunfish_esa.svg){fig-align="center"}
 
 ## Fitting Sunfish
 <br>
@@ -170,39 +170,64 @@ Supported hypotheses: _given the data_, species interactions are important but c
 ::: {.column}
 ### Questions/hypotheses:
 
-- Are local conditions (humidity) a stronger driver of change than species interactions?
+- Are local climatic conditions (humidity) a stronger driver of change than species interactions?
 :::
 ::: {.column}
 ### Parameter selection
 
-- window span / prediction resolution 100 years
-- species/taxonomic group selection
+- Window span / prediction resolution 100 years
+- Species/taxonomic group selection
   - five most dominant species
-  - Eastern white pine, hemlock, beech, oak, and birch
-- interactions:
-  - estimated between pine and hemlock (for this example)
+  - eastern white pine, hemlock, beech, oak, and birch
+- Interactions:
+  - pine - hemlock (in this example)
 :::
 ::::
 
 
 ## Sunfish results
 
-![](figures/sunfish_B_C_ESA.svg)
+![](./figures/sunfish_B_C_ESA.svg){fig-align="center"}
 
 
 Supported Hypotheses: local conditions most important to Hemlock but interactions are important among other species.
 Pairwise interactions not shown here.
 
-## Comparison of results
+## Comparison of case-studies
+<br>
 
-Results are not causal but test multiple hypotheses
+_Results are not causal but lend support hypotheses._
+
+<br>
+
+:::: {.columns}
+::: {.column}
+### Tulane
+
+- Long record
+- Multiple covariates
+- Fewer dominant taxa
+- Key drivers and interactions detected
+- Likely a loss of fine-scale processes like post-fire recovery
+
+:::
+::: {.column}
+### Sunfire
+
+- Holocene record
+- Single covariate
+- Multiple taxa
+- Finer-scale resolution
+- Likely to be missing explanitory power from unmeasured drivers
+:::
+::::
 
 ## Thank you for listening!
 
-![](./figures/qr-code.png){fig-align="center" width=50%}
+![](./figures/qr-code.png){fig-align="center" width=40%}
 
 ::: footer
-![](figures/color-UWcrest-print.png){width=60} ![](figures/NSF_Official_logo_High_Res_1200ppi.png){width=100}
+![](./figures/color-UWcrest-print.png){width=60} ![](./figures/NSF_Official_logo_High_Res_1200ppi.png){width=100}
 :::
 
 ## References
