@@ -68,7 +68,7 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 - Autoregressive / density dependent processes 
 - Interspecific interactions
-- Species-environment interactions
+- Species-environment relationships
 - Combinations of the above
 
 ## multinomialTS
@@ -93,7 +93,7 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 :::: {.columns}
 ::: {.column}
-### Tulane
+### Lake Tulane
 
 - Florida
 - ~60,000 year-long record
@@ -105,7 +105,7 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 - Williams _et al.,_ in prep, @grimm1993; @grimm2006b
 :::
 ::: {.column}
-### Sunfish
+### Sunfish Pond
 
 - Pennsylvania
 - ~13,000 years
@@ -125,11 +125,11 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 _Showing results for best model!_
 
-## Tulane variables
+## Lake Tulane variables
 
 ![](./figures/tulane_esa.svg){fig-align="center"}
 
-## Fitting Tulane
+## Fitting Lake Tulane
 <br>
 
 :::: {.columns}
@@ -153,17 +153,17 @@ _Showing results for best model!_
 ::::
 
 
-## Tulane results
+## Lake Tulane results
 
 ![](./figures/tulane_B_C_ESA.svg){fig-align="center"}
 
 Supported hypotheses: _given the data_, species interactions are important but climate covariates have a stronger influence.
 
-## Sunfish description
+## Sunfish Pond description
 
 ![](./figures/sunfish_esa.svg){fig-align="center"}
 
-## Fitting Sunfish
+## Fitting Sunfish Pond
 <br>
 
 :::: {.columns}
@@ -185,7 +185,7 @@ Supported hypotheses: _given the data_, species interactions are important but c
 ::::
 
 
-## Sunfish results
+## Sunfish Pond results
 
 ![](./figures/sunfish_B_C_ESA.svg){fig-align="center"}
 
@@ -202,7 +202,7 @@ _Results are not causal but lend support hypotheses._
 
 :::: {.columns}
 ::: {.column}
-### Tulane
+### Lake Tulane
 
 - Long record
 - Multiple covariates
@@ -212,7 +212,7 @@ _Results are not causal but lend support hypotheses._
 
 :::
 ::: {.column}
-### Sunfire
+### Sunfish Pond
 
 - Holocene record
 - Single covariate
@@ -222,12 +222,20 @@ _Results are not causal but lend support hypotheses._
 :::
 ::::
 
-## Thank you for listening!
+# Thank you for listening!
 
-![](./figures/qr-code.png){fig-align="center" width=40%}
+
+
+![](./figures/qr-code.png){fig-align="center" width=30%}
+
+:::{.r-stack}
+asenaq@caryinstitute.org
+:::
+
 
 ::: footer
-![](./figures/color-UWcrest-print.png){width=60} ![](./figures/NSF_Official_logo_High_Res_1200ppi.png){width=100}
+
+![](./figures/color-UWcrest-print.png){width=55} ![](./figures/NSF_Official_logo_High_Res_1200ppi.png){width=90}
 :::
 
 ## References
