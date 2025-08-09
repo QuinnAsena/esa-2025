@@ -51,7 +51,7 @@ _A state-space approach to modelling multinomially distributed community data._
 
 The cutting edge in palaeoecology is to establish potential relationships between patterns observed in species relative abundances and environmental covariates. For example, are observed patterns driven by:
 
-- Species interactions?
+- Species/taxa interactions?
 - Climate variability?
 - Fire regime?
 - ...
@@ -68,7 +68,7 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 - Autoregressive / density dependent processes 
 - Interspecific interactions
-- Species-environment relationships
+- taxa-environment relationships
 - Combinations of the above
 
 ## multinomialTS
@@ -157,7 +157,7 @@ _Showing results for best model!_
 
 ![](./figures/tulane_B_C_ESA.svg){fig-align="center"}
 
-Supported hypotheses: _given the data_, species interactions are important but climate covariates have a stronger influence.
+Supported hypotheses: _given the data_, taxa interactions are important but climate covariates have a stronger influence.
 
 ## Sunfish Pond description
 
@@ -170,14 +170,14 @@ Supported hypotheses: _given the data_, species interactions are important but c
 ::: {.column}
 ### Questions/hypotheses:
 
-- Are local climatic conditions (humidity) a stronger driver of change than species interactions?
+- Are local climatic conditions (humidity) a stronger driver of change than taxa interactions?
 :::
 ::: {.column}
 ### Parameter selection
 
 - Window span / prediction resolution 100 years
 - Species/taxonomic group selection
-  - five most dominant species
+  - five most dominant taxa
   - eastern white pine, hemlock, beech, oak, and birch
 - Interactions:
   - pine - hemlock (in this example)
@@ -190,7 +190,7 @@ Supported hypotheses: _given the data_, species interactions are important but c
 ![](./figures/sunfish_B_C_ESA.svg){fig-align="center"}
 
 
-Supported Hypotheses: local conditions most important to Hemlock but interactions are important among other species.
+Supported Hypotheses: local conditions most important to Hemlock but interactions are important among other taxa.
 Pairwise interactions not shown here.
 
 ## Comparison of case-studies
