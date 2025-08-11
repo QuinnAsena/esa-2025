@@ -41,7 +41,6 @@ _A state-space approach to modelling multinomially distributed community data._
 :::
 ::: {.column}
 - Do you have multinomially distributed data?
-- I'll try to leave a couple of extra minutes for discussion.
 :::
 ::::
 
@@ -68,7 +67,7 @@ _State-space modelling goes beyond descriptive approaches and attempts to estima
 
 - Autoregressive / density dependent processes 
 - Interspecific interactions
-- taxa-environment relationships
+- taxa-driver relationships
 - Combinations of the above
 
 ## multinomialTS
